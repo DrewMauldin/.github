@@ -1,0 +1,63 @@
+name: Implementation task
+description: Define one reviewable change with acceptance criteria and verification.
+title: "[Implementation]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Keep the change surgical. Use one issue, branch, worktree and pull request. Never include secrets or private data.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem and evidence
+      description: Explain the confirmed problem and cite the relevant code, behaviour or operational receipt.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope and non-goals
+      description: State what changes and what must remain untouched.
+    validations:
+      required: true
+  - type: textarea
+    id: plan
+    attributes:
+      label: Ordered implementation plan
+      description: Use small units that each end in a real check.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: Provide specific, testable conditions.
+    validations:
+      required: true
+  - type: textarea
+    id: files
+    attributes:
+      label: Likely files or surfaces
+      description: Name the smallest expected file and subsystem set.
+    validations:
+      required: true
+  - type: textarea
+    id: verification
+    attributes:
+      label: Verification and live gates
+      description: Include test commands and separate device, account, deployment or production proof.
+    validations:
+      required: true
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies, risks and rollback
+    validations:
+      required: true
+  - type: textarea
+    id: agent_prompt
+    attributes:
+      label: Future AI implementation prompt
+      description: Provide a self-contained prompt that starts from current main in a fresh worktree and ends with an unmerged pull request.
+    validations:
+      required: true

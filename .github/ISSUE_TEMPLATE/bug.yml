@@ -1,0 +1,67 @@
+name: Bug report
+description: Report a reproducible defect with evidence and a bounded verification path.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not include credentials, tokens, private customer data or secret configuration.
+  - type: textarea
+    id: outcome
+    attributes:
+      label: User impact
+      description: What fails, who is affected and how serious is it?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: Provide the smallest repeatable sequence, inputs and preconditions.
+      placeholder: |
+        1. Start from...
+        2. Perform...
+        3. Observe...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behaviour and evidence
+      description: Include sanitised errors, logs, screenshots or receipts.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Relevant app version, commit, OS, device, browser or deployment surface.
+    validations:
+      required: true
+  - type: textarea
+    id: boundaries
+    attributes:
+      label: Evidence boundaries
+      description: State what has and has not been proven across source, build, device, account and production layers.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria and verification
+      description: List regression cases and the commands or live checks that must pass.
+    validations:
+      required: true
+  - type: textarea
+    id: risk
+    attributes:
+      label: Risk and rollback
+      description: Identify data, compatibility, security or operational risk and the safe rollback.
+    validations:
+      required: true
