@@ -1,0 +1,53 @@
+name: Roadmap proposal
+description: Propose a user-valued enhancement with a clear decision and delivery path.
+title: "[Roadmap]: "
+body:
+  - type: textarea
+    id: opportunity
+    attributes:
+      label: User opportunity
+      description: Whose problem is this, and what improves if it is solved?
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence and current limitation
+      description: Cite observed behaviour, user feedback, code constraints or measured data. Label assumptions.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed outcome
+      description: Describe the smallest useful capability, not a full speculative design.
+    validations:
+      required: true
+  - type: textarea
+    id: constraints
+    attributes:
+      label: Constraints and non-goals
+      description: Include privacy, security, platform, compatibility and authority boundaries.
+    validations:
+      required: true
+  - type: textarea
+    id: slices
+    attributes:
+      label: Delivery slices and acceptance
+      description: Break the idea into independently reviewable vertical slices with checks.
+    validations:
+      required: true
+  - type: textarea
+    id: decision
+    attributes:
+      label: Decision gate
+      description: What evidence is needed before implementation or promotion?
+    validations:
+      required: true
+  - type: textarea
+    id: agent_prompt
+    attributes:
+      label: Future AI research prompt
+      description: Provide a self-contained prompt for the next bounded research or implementation step.
+    validations:
+      required: true
